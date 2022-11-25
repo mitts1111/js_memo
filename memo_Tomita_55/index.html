@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label> -->
+    <main>
+        <div class="contents">
+   
+            <div class="sidebar">
+                <header>All Notes</header>
+                
+                <ul id="allnote">
+                    <li>
+                        ここに追加されるという目印
+                    </li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <header class="noteheader">
+                    <a href="" class="iconleft"><i class="fa-thin fa-circle-info"></i></a>
+                    <a href="" class="iconright"><i class="fa-thin fa-circle-info"></i></a>
+                    <a href="" class="iconright"><i class="fa-thin fa-circle-info"></i></a>
+                    <a href="" class="iconright"><i class="fa-thin fa-circle-ellipsis-vertical"></i></a>
+                </header>
+                <div class="text"> 
+                    <input type="text" id="key" placeholder="メモのタイトルを入れてください。">
+                    <textarea id="memo" placeholder="本文を入れてください"></textarea>
+                    <ul>
+                        <li id="save" class="savebutton">Save</li>
+                        <li id="clear" class="clearbutton">Clear</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/memo.js"></script>
+</body>
+
+</html>

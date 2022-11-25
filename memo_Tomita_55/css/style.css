@@ -1,0 +1,151 @@
+/* ここから下に記載していく */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.contents {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0;
+    padding-top: 5px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  left: -250px; checkboxを実装するとき
+  background: white;
+  width: 380px;
+  height: 100%;
+  transition: all 0.5s;
+    border-right: 1px solid #ebebeb;
+}
+
+header {
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  height: 40px;
+  background: rgb(163, 162, 161); 
+  user-select: none;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.sidebar ul li {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: auto;
+  font-size: 20px;
+  color: black;
+  padding: 10px 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  transition: 0.4s;
+}
+
+.note {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0px 0px;
+    margin-left: 380px;
+    text-align: center;
+}
+
+/* noteheader */
+
+
+.note #key{
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding-left: 25px;
+}
+
+.note #memo{
+    width: 80%;
+    height: 70%;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.note ul {
+  text-align: center;
+}
+
+.note ul li{
+  display: table-cell;
+  cursor: pointer;
+  color: #0d7dfd;
+}
+
+.savebutton{
+width:100px;
+margin-top: 10px;
+padding:25px;
+border:1px solid #ebebeb;
+border-radius:10px;
+}
+
+
+.clearbutton{
+width:100px;
+margin-top: 10px;
+padding:25px;
+border:1px solid #ebebeb;
+border-radius:10px;
+}
+
+
+ul li:hover a {
+  padding-left: 50px;
+} 
+
+.sidebar ul a i {
+  margin-right: 16px;
+} 
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #b66f2d;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 25px;
+  color: #fff;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+label #cancel {
+  z-index: 10;
+  left: 195px; 
+  top: 17px;
+  font-size: 30px;
+  color: #fff;
+  padding: 4px 9px;
+  transition: all 0.5s;
+}
